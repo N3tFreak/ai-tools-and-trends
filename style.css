@@ -1,93 +1,149 @@
-/* Base styles for the AI Tools Hub website */
+/* Global styles for AI Tools Hub */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
   color: #333;
-  background-color: #f9f9f9;
+  background-color: #f9f9fb;
 }
 
-header {
-  text-align: center;
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 1rem;
+}
+
+/* Header */
+header {
   background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 header h1 {
+  font-size: 2rem;
   margin: 0;
-  font-size: 2.5rem;
-}
-
-header p {
-  margin: 0.5rem 0 1rem 0;
-  font-size: 1.2rem;
-  color: #666;
-}
-
-header img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 1rem;
-  margin: 1rem 0;
 }
 
 nav ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   justify-content: center;
-}
-
-nav li {
-  margin: 0 1rem;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
 }
 
 nav a {
   text-decoration: none;
-  color: #0077cc;
-  font-weight: bold;
+  color: #0070f3;
+  font-weight: 500;
 }
 
-main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem;
+nav a:hover {
+  text-decoration: underline;
 }
 
-.intro h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+/* Hero section */
+.hero {
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 4rem 1rem;
+  text-align: center;
 }
 
-.articles article {
-  background-color: #fff;
-  margin: 1rem 0;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-.articles article h3 {
-  margin-top: 0;
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.articles article a {
-  color: #0077cc;
+/* Cards grid on index */
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin: 1rem 1rem 0.5rem 1rem;
+}
+
+.card p {
+  margin: 0;
+  padding: 0 1rem 1.5rem 1rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.card a {
+  color: #0070f3;
   text-decoration: none;
 }
 
-.articles article a:hover {
+.card a:hover {
   text-decoration: underline;
+}
+
+/* Article page */
+.article-page main {
+  max-width: 750px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.article-page h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.article-page p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+/* Ad container */
+.ad-container {
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 728px;
 }
 
 footer {
   text-align: center;
-  padding: 1rem;
-  background-color: #f1f1f1;
-  color: #666;
-  margin-top: 2rem;
+  padding: 2rem 0;
   font-size: 0.9rem;
+  color: #888;
 }
