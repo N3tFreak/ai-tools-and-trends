@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Tell search engines where to find the sitemap
+Sitemap: https://n3tfreak.github.io/ai-tools-and-trends/sitemap.xml
