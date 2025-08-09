@@ -128,3 +128,56 @@ footer {
   margin-top: 2rem;
   font-size: 0.9rem;
 }
+
+/* Subscription section styles */
+.subscribe {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  text-align: center;
+}
+
+.subscribe h3 {
+  margin-top: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+}
+
+.subscribe p {
+  margin: 0.5rem 0 1rem 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.subscribe form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.subscribe input[type="email"] {
+  flex: 1 1 250px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+.subscribe button {
+  padding: 0.5rem 1rem;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.subscribe button:hover {
+  background-color: #005fa3;
+}
